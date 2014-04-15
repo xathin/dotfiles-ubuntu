@@ -55,7 +55,7 @@ Bundle "skwp/vim-colors-solarized"
 Bundle "itchyny/lightline.vim"
 Bundle "bogado/file-line.git"
 Bundle "jby/tmux.vim.git"
-Bundle "morhetz/gruvbox"
+"Bundle "morhetz/gruvbox"
 Bundle "xsunsmile/showmarks.git"
 
 "" Textobjects
