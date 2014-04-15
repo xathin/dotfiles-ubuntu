@@ -28,15 +28,6 @@ Bundle "skwp/vim-spec-finder"
 Bundle "ck3g/vim-change-hash-syntax"
 Bundle "tpope/vim-bundler"
 
-"" Appearance
-Bundle "chrisbra/color_highlight.git"
-Bundle "skwp/vim-colors-solarized"
-Bundle "itchyny/lightline.vim"
-Bundle "bogado/file-line.git"
-Bundle "jby/tmux.vim.git"
-Bundle "morhetz/gruvbox"
-Bundle "xsunsmile/showmarks.git"
-
 "" Languages
 Bundle "briancollins/vim-jst"
 Bundle "pangloss/vim-javascript"
@@ -51,6 +42,46 @@ Bundle "nelstrom/vim-markdown-preview"
 Bundle "skwp/vim-html-escape"
 Bundle "tpope/vim-haml"
 Bundle "honza/vim-snippets"
+
+"" Git
+Bundle "gregsexton/gitv"
+Bundle "mattn/gist-vim"
+Bundle "tpope/vim-fugitive"
+Bundle "tpope/vim-git"
+
+"" Appearance
+Bundle "chrisbra/color_highlight.git"
+Bundle "skwp/vim-colors-solarized"
+Bundle "itchyny/lightline.vim"
+Bundle "bogado/file-line.git"
+Bundle "jby/tmux.vim.git"
+Bundle "morhetz/gruvbox"
+Bundle "xsunsmile/showmarks.git"
+
+"" Textobjects
+" These bundles introduce new textobjects into vim,
+" For example the Ruby one introduces the 'r' text object
+" such that 'var' gives you Visual Around Ruby
+Bundle "austintaylor/vim-indentobject"
+Bundle "bootleq/vim-textobj-rubysymbol"
+Bundle "coderifous/textobj-word-column.vim"
+Bundle "kana/vim-textobj-datetime"
+Bundle "kana/vim-textobj-entire"
+Bundle "kana/vim-textobj-function"
+Bundle "kana/vim-textobj-user"
+Bundle "lucapette/vim-textobj-underscore"
+Bundle "nathanaelkane/vim-indent-guides"
+Bundle "nelstrom/vim-textobj-rubyblock"
+Bundle "thinca/vim-textobj-function-javascript"
+Bundle "vim-scripts/argtextobj.vim"
+
+"" Search
+Bundle "justinmk/vim-sneak"
+Bundle "rking/ag.vim"
+Bundle "vim-scripts/IndexedSearch"
+Bundle "nelstrom/vim-visual-star-search"
+Bundle "skwp/greplace.vim"
+Bundle "skwp/vim-easymotion"
 
 "" Project
 Bundle "jistr/vim-nerdtree-tabs.git"
@@ -90,36 +121,9 @@ Bundle "vim-scripts/sudo.vim"
 Bundle "terryma/vim-multiple-cursors"
 Bundle "goldfeld/ctrlr.vim"
 
-"" Textobjects
-" These bundles introduce new textobjects into vim,
-" For example the Ruby one introduces the 'r' text object
-" such that 'var' gives you Visual Around Ruby
-Bundle "austintaylor/vim-indentobject"
-Bundle "bootleq/vim-textobj-rubysymbol"
-Bundle "coderifous/textobj-word-column.vim"
-Bundle "kana/vim-textobj-datetime"
-Bundle "kana/vim-textobj-entire"
-Bundle "kana/vim-textobj-function"
-Bundle "kana/vim-textobj-user"
-Bundle "lucapette/vim-textobj-underscore"
-Bundle "nathanaelkane/vim-indent-guides"
-Bundle "nelstrom/vim-textobj-rubyblock"
-Bundle "thinca/vim-textobj-function-javascript"
-Bundle "vim-scripts/argtextobj.vim"
-
-"" Search
-Bundle "justinmk/vim-sneak"
-Bundle "rking/ag.vim"
-Bundle "vim-scripts/IndexedSearch"
-Bundle "nelstrom/vim-visual-star-search"
-Bundle "skwp/greplace.vim"
-Bundle "skwp/vim-easymotion"
-
-"" Git
-Bundle "gregsexton/gitv"
-Bundle "mattn/gist-vim"
-Bundle "tpope/vim-fugitive"
-Bundle "tpope/vim-git"
+if filereadable(expand("~/.dotfiles/vim/.vundles.local"))
+  source ~/.dotfiles/vim/.vundles.local
+endif
 
 " Filetype plugin indent on is required by vundle
 filetype plugin indent on
