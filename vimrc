@@ -24,7 +24,7 @@ syntax on
 " Change mapleader command to something more reasonable
 let mapleader=","
 
-" ========= Vundle INitialization ========
+" ========= Vundle Initialization ========
 " Load all the plugins found in vundle
 if filereadable(expand("~/.vim/vundles.vim"))
   source ~/.vim/vundles.vim
